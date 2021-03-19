@@ -22,7 +22,7 @@ Order_My_Files is a Python based file orderer. It lets you slelect a number of f
 ## Use
 1) Run the Order_My_Files.exe
 
-2) ![alt text](Order_My_Files/Photos/Foto_Repository1.png raw=true)
+2) ![alt text](Order_My_Files/Photos/Foto_Repository1.png?raw=true "Step 1:)
 
 
 
