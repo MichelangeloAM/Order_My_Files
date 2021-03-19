@@ -26,13 +26,13 @@ Order_My_Files is a Python based file orderer. It lets you slelect a number of f
   ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository1.png?raw=true "Step 1:")
   
 3) ###### Type the name for the files you selected:
-  ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository2.png?raw=true "Step 1:")
+  ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository2.png?raw=true "Step 2:")
   
 4) ###### Type the destination folder's name: 
-  ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository3.png?raw=true "Step 1:")
+  ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository3.png?raw=true "Step 3:")
   
 5) ###### Ordered Files:
-  ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository4.png?raw=true "Step 1:")
+  ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository4.png?raw=true "Step 4:")
 
 
 
