@@ -3,6 +3,7 @@ import os
 import tkinter.filedialog
 import pathlib
 from datetime import datetime
+from re import match
 from os import rename
 from tkinter import simpledialog
 import getpass
@@ -20,6 +21,36 @@ ftypes = [
     ("PDF files", "*.pdf"),
     ('All files', '*'),
 ]
+
+# The function renames and relocates selected files depending on the sorting selected
+
+
+def creation():
+    lst.sort(key=os.path.getctime)
+    num = 1
+    for line in lst:
+        dst = newpath + name + str(num) + suffix
+        rename(line, dst)
+        num += 1
+
+
+def lastmodified():
+    lst.sort(key=os.path.getmtime)
+    num = 1
+    for line in lst:
+        dst = newpath + name + str(num) + suffix
+        rename(line, dst)
+        num += 1
+
+
+def lastaccessed():
+    lst.sort(key=os.path.getatime)
+    num = 1
+    for line in lst:
+        dst = newpath + name + str(num) + suffix
+        rename(line, dst)
+        num += 1
+
 
 
 root = tkinter.Tk()
@@ -47,15 +78,15 @@ ROOT = tkinter.Tk()
 
 ROOT.withdraw()
 
-USER_INP = simpledialog.askstring(title="Test", prompt="Name your files:")
+USER_INP = simpledialog.askstring(title="File Names", prompt="Name your files:")
 
 # Gets username for path use
 username = getpass.getuser()
 
 name = USER_INP
-num = 1
+#num = 1
 
-USER_INP2 = simpledialog.askstring(title="Test", prompt="Name your folder:")
+USER_INP2 = simpledialog.askstring(title="Folder Name", prompt="Name your folder:")
 
 foldername = USER_INP2
 
@@ -64,12 +95,16 @@ newpath = r'/Users/' + username + '/Desktop/' + foldername + '/'
 if not os.path.exists(newpath):
     os.makedirs(newpath)
 
-lst.sort(key=os.path.getmtime)
+user_input3 = simpledialog.askstring(title="Mode",
+                                         prompt="Write: c to order by creation, m by last modified, a by last accessed")
 
-# Renames and relocates selected files
-for line in lst:
-    dst = newpath + name + str(num) + suffix
-    rename(line, dst)
-    num += 1
-#file_list = os.listdir(newpath)
+while user_input3 != 'c' and user_input3 != 'm' and user_input3 != 'a':
+    user_input3 = simpledialog.askstring(title="Mode",
+                                         prompt="Write: c to order by creation, m by last modified, a by last accessed")
 
+if user_input3 == 'c':
+    creation()
+elif user_input3 == 'm':
+    lastmodified()
+else:
+    lastaccessed()
