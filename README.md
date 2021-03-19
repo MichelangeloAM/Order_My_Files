@@ -22,7 +22,19 @@ Order_My_Files is a Python based file orderer. It lets you slelect a number of f
 ## Use
 1) Run the Order_My_Files.exe
 
-2) ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository1.png?raw=true "Step 1:")
+2) 
+  ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository1.png?raw=true "Step 1:")
+  
+3)
+  ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository2.png?raw=true "Step 1:")
+  
+4)  
+  ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository3.png?raw=true "Step 1:")
+  
+5)
+  ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository4.png?raw=true "Step 1:")
+
+
 
 
 
