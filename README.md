@@ -8,10 +8,11 @@ Order_My_Files is a Python based file orderer. It lets you slelect a number of f
 - Select multiple files to order
 - Select a name for the files
 - Select a name for the destination folder that will be generated
+- Select ordering process: by *creation*, *last modified* or last *accessed*
 - ✨Magic ✨
 
 ## Future Features
-- Order files by modified date or added date
+- Order files by modified date or added date *<--- Added*
 - Choose the location of the destination folder
 
 ## Installation
@@ -33,6 +34,9 @@ Order_My_Files is a Python based file orderer. It lets you slelect a number of f
   
 5) ###### Ordered Files:
   ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository4.png?raw=true "Step 4:")
+
+6) ##### Select Ordering Technique :
+  ![alt text](https://github.com/Ziomike98/Order_My_Files/blob/main/Photos/Foto_Repository5.png?raw=true "Step 5:")
 
 
 
