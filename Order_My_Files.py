@@ -1,4 +1,3 @@
-import glob
 import os
 import tkinter.filedialog
 import pathlib
