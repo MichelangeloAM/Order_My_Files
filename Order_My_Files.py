@@ -2,13 +2,9 @@ import glob
 import os
 import tkinter.filedialog
 import pathlib
-from datetime import datetime
-from re import match
 from os import rename
 from tkinter import simpledialog
 import getpass
-import time
-
 
 # File types list
 ftypes = [
