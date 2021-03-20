@@ -16,8 +16,8 @@ Order_My_Files is a Python based file orderer. It lets you slelect a number of f
 - Choose the location of the destination folder
 
 ## Installation
-- Download the executable
-- Run
+- Download the project, open it and find the *dist* folder, inside you will find an executable, run the file and the program will start.
+- Run, in case of failure, check permissions to run the app.
 - ✨Magic ✨
 
 ## Use
