@@ -56,7 +56,8 @@ def lastaccessed():
 root = tkinter.Tk()
 
 # Window to select files to order
-filez = tkinter.filedialog.askopenfilenames(parent=root, title='Select files to rename (must be all of the same type!)')
+filez = tkinter.filedialog.askopenfilenames(parent=root,
+                                            title='Select files to rename (must be all of the same type!)')
 
 '''
 for line in filez:
@@ -67,7 +68,7 @@ for line in filez:
 lst = list(filez)
 
 # Saves the extension of the selected files
-suffix = pathlib.Path(lst[1]).suffix
+suffix = pathlib.Path(lst[0]).suffix
 
 
 # Window to get user input on file naming
@@ -78,15 +79,26 @@ ROOT = tkinter.Tk()
 
 ROOT.withdraw()
 
-USER_INP = simpledialog.askstring(title="File Names", prompt="Name your files:")
+# Asks user for file names, while loop won't break if no name is given
+USER_INP = simpledialog.askstring(title="File Names",
+                                  prompt="Name your files:")
+
+while USER_INP == '':
+    USER_INP = simpledialog.askstring(title="File Names",
+                                      prompt="Name your files:")
 
 # Gets username for path use
 username = getpass.getuser()
 
 name = USER_INP
-#num = 1
 
-USER_INP2 = simpledialog.askstring(title="Folder Name", prompt="Name your folder:")
+# Asks user for folder name, while loop won't break if no name is given
+USER_INP2 = simpledialog.askstring(title="Folder Name",
+                                   prompt="Name your folder:")
+
+while USER_INP2 == '':
+    USER_INP2 = simpledialog.askstring(title="Folder Name",
+                                       prompt="Name your folder:")
 
 foldername = USER_INP2
 
@@ -96,7 +108,7 @@ if not os.path.exists(newpath):
     os.makedirs(newpath)
 
 user_input3 = simpledialog.askstring(title="Mode",
-                                         prompt="Write: c to order by creation, m by last modified, a by last accessed")
+                                     prompt="Write: c to order by creation, m by last modified, a by last accessed")
 
 while user_input3 != 'c' and user_input3 != 'm' and user_input3 != 'a':
     user_input3 = simpledialog.askstring(title="Mode",
