@@ -1,4 +1,4 @@
-# Order_My_Files
+# Order_My_Files -- A small tool I made to learn Python and more!
 ##  The Light and Fast File Orderer you needed!
 
 
